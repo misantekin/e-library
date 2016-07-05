@@ -134,12 +134,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\PublisherController.cs" />
     <Compile Include="Controllers\UserInfoController.cs" />
     <Compile Include="Helpers\IdentityHelper.cs" />
-    <Compile Include="LoginSampleModule.cs" />
-    <Compile Include="Mapping\PublisherMapping.cs" />
-    <Compile Include="Models\Publishers\PublisherViewModel.cs" />
     <Compile Include="Models\Users\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\SimpleAuthorizationServerProvider.cs" />
@@ -156,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Mapping\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InfoNovitas.LoginSample.Authentication\InfoNovitas.LoginSample.Authentication.csproj">

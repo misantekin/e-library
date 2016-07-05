@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoNovitas.LoginSample.SPA", "InfoNovitas.LoginSample.SPA\InfoNovitas.LoginSample.SPA.csproj", "{17AF7C91-78E8-4AEB-A741-65322DFF6114}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoNovitas.LoginSample.Repositories", "InfoNovitas.LoginSample.Repositories\InfoNovitas.LoginSample.Repositories.csproj", "{93BEB157-F12A-43D3-8ACD-2B4164F71801}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoNovitas.LoginSample.Services", "InfoNovitas.LoginSample.Services\InfoNovitas.LoginSample.Services.csproj", "{FE27AD6A-D7A7-497B-AF37-5F18F851D2C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoNovitas.LoginSample.Model", "InfoNovitas.LoginSample.Model\InfoNovitas.LoginSample.Model.csproj", "{2BA1BBFC-08FD-479F-8909-443AE4A6CC39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{FE27AD6A-D7A7-497B-AF37-5F18F851D2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE27AD6A-D7A7-497B-AF37-5F18F851D2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE27AD6A-D7A7-497B-AF37-5F18F851D2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA1BBFC-08FD-479F-8909-443AE4A6CC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA1BBFC-08FD-479F-8909-443AE4A6CC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA1BBFC-08FD-479F-8909-443AE4A6CC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA1BBFC-08FD-479F-8909-443AE4A6CC39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

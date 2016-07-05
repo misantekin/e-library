@@ -11,6 +11,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Cors;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
+using InfoNovitas.LoginSample.Repositories.Users;
+using InfoNovitas.LoginSample.Repositories;
+using InfoNovitas.LoginSample.Services.Impl;
 
 [assembly: OwinStartup(typeof(Startup))]
 namespace InfoNovitas.LoginSample.Web.Api
@@ -38,7 +41,10 @@ namespace InfoNovitas.LoginSample.Web.Api
             {
                 var builder = new ContainerBuilder();
                 builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
-                builder.RegisterModule(new LoginSampleModule());
+
+                builder.RegisterType<UserRepository>().As<IUserRepository>();
+                builder.RegisterType<UserService>().As<IUserService>();
+
                 _container = builder.Build();
                 config.DependencyResolver = new AutofacWebApiDependencyResolver(_container);
                 //AutoMapperBootstrapper.CreateMap();

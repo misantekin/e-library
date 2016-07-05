@@ -69,10 +69,8 @@
     <Compile Include="DatabaseModel\UserInfo.cs">
       <DependentUpon>LoginSampleModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="IPublisherRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IUserRepository.cs" />
-    <Compile Include="Publishers\PublisherRepository.cs" />
     <Compile Include="Users\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

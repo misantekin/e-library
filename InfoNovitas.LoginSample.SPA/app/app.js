@@ -50,28 +50,12 @@ loginApp.config([
                 cache: false,
                 resolve: {
                     loginRequired: loginRequired,
-                    dashboard: function($ocLazyLoad) {
+                    dashboard: function ($ocLazyLoad) {
                         return $ocLazyLoad.load({
                             name: "dashboard",
                             files: [
                                 "app/dashboard/controllers/dashboardCtrl.js",
                                 "app/dashboard/dashboardModule.js"
-                            ]
-                        });
-                    }
-
-                }
-            }).state('publishers', {
-                url: "/publishers",
-                controller: "PublishersCtrl",
-                templateUrl: "app/publishers/partials/publishers.html",
-                resolve: {
-                    loginRequired: loginRequired,
-                    publishers: function ($ocLazyLoad) {
-                        return $ocLazyLoad.load({
-                            name: "publishers",
-                            files: [
-                                "app/publishers/publishersModule.js"
                             ]
                         });
                     }
